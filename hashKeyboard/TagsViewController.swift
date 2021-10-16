@@ -8,14 +8,11 @@
 import UIKit
 
 class TagsViewController: UIViewController {
-
     @IBOutlet weak var edit: UIBarButtonItem!
     @IBOutlet weak var add: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 

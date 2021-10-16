@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class EditTagViewController: UIViewController {
     @IBOutlet weak var close: UIBarButtonItem!
@@ -14,9 +15,21 @@ class EditTagViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        CoreDataManager.shared.saveTag(key: "test", value: "done?") {
+            if $0 {
+                print(123)
+            }
+        }
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        let data = CoreDataManager.shared.loadFromCoreData(request: Tag.fetchRequest())
+        print(123)
+    }
+
     
 
     /*

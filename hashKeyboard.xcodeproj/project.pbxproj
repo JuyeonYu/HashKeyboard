@@ -17,6 +17,10 @@
 		CED6BD9C271AFE9600136B1E /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BD9B271AFE9600136B1E /* ConfigViewController.swift */; };
 		CED6BD9E271B108000136B1E /* EditBookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BD9D271B108000136B1E /* EditBookmarkViewController.swift */; };
 		CED6BDA0271B134600136B1E /* EditTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BD9F271B134600136B1E /* EditTagViewController.swift */; };
+		CED6BDA3271B16B200136B1E /* Bookmark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDA1271B16B200136B1E /* Bookmark.xcdatamodeld */; };
+		CED6BDC2271B1AF000136B1E /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC0271B1AF000136B1E /* Tag+CoreDataClass.swift */; };
+		CED6BDC3271B1AF000136B1E /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC1271B1AF000136B1E /* Tag+CoreDataProperties.swift */; };
+		CED6BDC5271B1B9500136B1E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC4271B1B9500136B1E /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		CED6BD9B271AFE9600136B1E /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		CED6BD9D271B108000136B1E /* EditBookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookmarkViewController.swift; sourceTree = "<group>"; };
 		CED6BD9F271B134600136B1E /* EditTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTagViewController.swift; sourceTree = "<group>"; };
+		CED6BDA2271B16B200136B1E /* Bookmark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookmark.xcdatamodel; sourceTree = "<group>"; };
+		CED6BDC0271B1AF000136B1E /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CED6BDC1271B1AF000136B1E /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CED6BDC4271B1B9500136B1E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,8 @@
 		AE07C872271910B8004992B7 = {
 			isa = PBXGroup;
 			children = (
+				CED6BDC0271B1AF000136B1E /* Tag+CoreDataClass.swift */,
+				CED6BDC1271B1AF000136B1E /* Tag+CoreDataProperties.swift */,
 				AE07C87D271910B8004992B7 /* hashKeyboard */,
 				AE07C87C271910B8004992B7 /* Products */,
 			);
@@ -65,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				AE07C87E271910B8004992B7 /* AppDelegate.swift */,
+				CED6BDC4271B1B9500136B1E /* CoreDataManager.swift */,
 				AE07C880271910B8004992B7 /* SceneDelegate.swift */,
 				CED6BD97271AFE7A00136B1E /* BookmarksViewController.swift */,
 				CED6BD99271AFE8600136B1E /* TagsViewController.swift */,
@@ -72,6 +83,7 @@
 				CED6BD9D271B108000136B1E /* EditBookmarkViewController.swift */,
 				CED6BD9F271B134600136B1E /* EditTagViewController.swift */,
 				AE07C884271910B8004992B7 /* Main.storyboard */,
+				CED6BDA1271B16B200136B1E /* Bookmark.xcdatamodeld */,
 				AE07C887271910BB004992B7 /* Assets.xcassets */,
 				AE07C889271910BB004992B7 /* LaunchScreen.storyboard */,
 				AE07C88C271910BB004992B7 /* Info.plist */,
@@ -153,10 +165,14 @@
 				CED6BD98271AFE7A00136B1E /* BookmarksViewController.swift in Sources */,
 				CED6BD9A271AFE8600136B1E /* TagsViewController.swift in Sources */,
 				CED6BDA0271B134600136B1E /* EditTagViewController.swift in Sources */,
+				CED6BDA3271B16B200136B1E /* Bookmark.xcdatamodeld in Sources */,
+				CED6BDC2271B1AF000136B1E /* Tag+CoreDataClass.swift in Sources */,
 				CED6BD9E271B108000136B1E /* EditBookmarkViewController.swift in Sources */,
+				CED6BDC3271B1AF000136B1E /* Tag+CoreDataProperties.swift in Sources */,
 				AE07C87F271910B8004992B7 /* AppDelegate.swift in Sources */,
 				CED6BD9C271AFE9600136B1E /* ConfigViewController.swift in Sources */,
 				AE07C881271910B8004992B7 /* SceneDelegate.swift in Sources */,
+				CED6BDC5271B1B9500136B1E /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +392,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CED6BDA1271B16B200136B1E /* Bookmark.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CED6BDA2271B16B200136B1E /* Bookmark.xcdatamodel */,
+			);
+			currentVersion = CED6BDA2271B16B200136B1E /* Bookmark.xcdatamodel */;
+			path = Bookmark.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AE07C873271910B8004992B7 /* Project object */;
 }

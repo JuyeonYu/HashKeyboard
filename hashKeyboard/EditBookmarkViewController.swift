@@ -16,7 +16,10 @@ class EditBookmarkViewController: UIViewController {
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let data = CoreDataManager.shared.loadFromCoreData(request: Tag.fetchRequest())
+        guard let uuid = data.first?.id else { return }
+        let result = CoreDataManager.shared.delete(at: uuid, request: Tag.fetchRequest())
+        print(123)
         // Do any additional setup after loading the view.
     }
     
