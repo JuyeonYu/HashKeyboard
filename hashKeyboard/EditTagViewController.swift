@@ -7,21 +7,27 @@
 
 import UIKit
 import CoreData
+import RxSwift
 
 class EditTagViewController: UIViewController {
+    var disposeBag = DisposeBag()
+    var tag: Tag?
     @IBOutlet weak var close: UIBarButtonItem!
     @IBOutlet weak var done: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        close.rx.tap
+            .asDriver()
+            .drive(onNext: { [weak self] in
+                self?.dismiss(animated: true, completion: nil)
+            }).disposed(by: disposeBag)
         CoreDataManager.shared.saveTag(key: "test", value: "done?") {
             if $0 {
                 print(123)
             }
         }
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillDisappear(_ animated: Bool) {

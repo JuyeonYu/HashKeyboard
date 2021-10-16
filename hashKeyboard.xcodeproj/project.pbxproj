@@ -22,6 +22,7 @@
 		CED6BDC2271B1AF000136B1E /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC0271B1AF000136B1E /* Tag+CoreDataClass.swift */; };
 		CED6BDC3271B1AF000136B1E /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC1271B1AF000136B1E /* Tag+CoreDataProperties.swift */; };
 		CED6BDC5271B1B9500136B1E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC4271B1B9500136B1E /* CoreDataManager.swift */; };
+		CED6BDC7271B27C700136B1E /* TagsReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC6271B27C700136B1E /* TagsReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		CED6BDC0271B1AF000136B1E /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CED6BDC1271B1AF000136B1E /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CED6BDC4271B1B9500136B1E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CED6BDC6271B27C700136B1E /* TagsReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsReactor.swift; sourceTree = "<group>"; };
 		D202E41CDF0DFD628F0B378C /* Pods-hashKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashKeyboard.release.xcconfig"; path = "Target Support Files/Pods-hashKeyboard/Pods-hashKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +74,6 @@
 				2D2AA41D5C179F01A27A9B34 /* Pods-hashKeyboard.debug.xcconfig */,
 				D202E41CDF0DFD628F0B378C /* Pods-hashKeyboard.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +105,7 @@
 				AE07C880271910B8004992B7 /* SceneDelegate.swift */,
 				CED6BD97271AFE7A00136B1E /* BookmarksViewController.swift */,
 				CED6BD99271AFE8600136B1E /* TagsViewController.swift */,
+				CED6BDC6271B27C700136B1E /* TagsReactor.swift */,
 				CED6BD9B271AFE9600136B1E /* ConfigViewController.swift */,
 				CED6BD9D271B108000136B1E /* EditBookmarkViewController.swift */,
 				CED6BD9F271B134600136B1E /* EditTagViewController.swift */,
@@ -242,6 +244,7 @@
 				CED6BD9C271AFE9600136B1E /* ConfigViewController.swift in Sources */,
 				AE07C881271910B8004992B7 /* SceneDelegate.swift in Sources */,
 				CED6BDC5271B1B9500136B1E /* CoreDataManager.swift in Sources */,
+				CED6BDC7271B27C700136B1E /* TagsReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
