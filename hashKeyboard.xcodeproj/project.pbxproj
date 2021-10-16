@@ -23,6 +23,7 @@
 		CED6BDC3271B1AF000136B1E /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC1271B1AF000136B1E /* Tag+CoreDataProperties.swift */; };
 		CED6BDC5271B1B9500136B1E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC4271B1B9500136B1E /* CoreDataManager.swift */; };
 		CED6BDC7271B27C700136B1E /* TagsReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC6271B27C700136B1E /* TagsReactor.swift */; };
+		CED6BDC9271B3D4E00136B1E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BDC8271B3D4E00136B1E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		CED6BDC1271B1AF000136B1E /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CED6BDC4271B1B9500136B1E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		CED6BDC6271B27C700136B1E /* TagsReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsReactor.swift; sourceTree = "<group>"; };
+		CED6BDC8271B3D4E00136B1E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D202E41CDF0DFD628F0B378C /* Pods-hashKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashKeyboard.release.xcconfig"; path = "Target Support Files/Pods-hashKeyboard/Pods-hashKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				CED6BD9B271AFE9600136B1E /* ConfigViewController.swift */,
 				CED6BD9D271B108000136B1E /* EditBookmarkViewController.swift */,
 				CED6BD9F271B134600136B1E /* EditTagViewController.swift */,
+				CED6BDC8271B3D4E00136B1E /* Extensions.swift */,
 				AE07C884271910B8004992B7 /* Main.storyboard */,
 				CED6BDA1271B16B200136B1E /* Bookmark.xcdatamodeld */,
 				AE07C887271910BB004992B7 /* Assets.xcassets */,
@@ -241,6 +244,7 @@
 				CED6BD9E271B108000136B1E /* EditBookmarkViewController.swift in Sources */,
 				CED6BDC3271B1AF000136B1E /* Tag+CoreDataProperties.swift in Sources */,
 				AE07C87F271910B8004992B7 /* AppDelegate.swift in Sources */,
+				CED6BDC9271B3D4E00136B1E /* Extensions.swift in Sources */,
 				CED6BD9C271AFE9600136B1E /* ConfigViewController.swift in Sources */,
 				AE07C881271910B8004992B7 /* SceneDelegate.swift in Sources */,
 				CED6BDC5271B1B9500136B1E /* CoreDataManager.swift in Sources */,

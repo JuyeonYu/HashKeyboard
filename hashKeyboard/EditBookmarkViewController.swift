@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import RxSwift
 
 class EditBookmarkViewController: UIViewController {
-
+    let disposeBag = DisposeBag()
     @IBOutlet weak var close: UIBarButtonItem!
     @IBOutlet weak var done: UIBarButtonItem!
     @IBOutlet weak var textView: UITextView!
@@ -16,11 +17,21 @@ class EditBookmarkViewController: UIViewController {
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let data = CoreDataManager.shared.loadFromCoreData(request: Tag.fetchRequest())
-        guard let uuid = data.first?.id else { return }
-        let result = CoreDataManager.shared.delete(at: uuid, request: Tag.fetchRequest())
-        print(123)
+        
         // Do any additional setup after loading the view.
+        close.rx.tap
+            .asDriver()
+            .drive(onNext: { [weak self] in
+                self?.dismiss(animated: true, completion: nil)
+            })
+        done.rx.tap
+            .asDriver()
+            .drive(onNext: {
+                let data = CoreDataManager.shared.loadFromCoreData(request: Tag.fetchRequest())
+                guard let uuid = data.first?.id else { return }
+                let result = CoreDataManager.shared.delete(at: uuid, request: Tag.fetchRequest())
+                print(123)
+            }).disposed(by: disposeBag)
     }
     
 

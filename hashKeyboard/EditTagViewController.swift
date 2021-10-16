@@ -28,6 +28,15 @@ class EditTagViewController: UIViewController {
                 print(123)
             }
         }
+        rx.viewWillDisappear
+            .asDriver()
+            .drive(onNext: { [weak self] _ in
+                self?.dismiss(animated: true, completion: {
+                    let top = UIApplication.topViewController() as? TagsViewController
+                    top?.reactor?.action.onNext(.loadTags)
+                    
+                })
+            }).disposed(by: disposeBag)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
