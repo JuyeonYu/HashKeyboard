@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		AE07C87F271910B8004992B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07C87E271910B8004992B7 /* AppDelegate.swift */; };
 		AE07C881271910B8004992B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07C880271910B8004992B7 /* SceneDelegate.swift */; };
-		AE07C883271910B8004992B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07C882271910B8004992B7 /* ViewController.swift */; };
 		AE07C886271910B8004992B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE07C884271910B8004992B7 /* Main.storyboard */; };
 		AE07C888271910BB004992B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE07C887271910BB004992B7 /* Assets.xcassets */; };
 		AE07C88B271910BB004992B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE07C889271910BB004992B7 /* LaunchScreen.storyboard */; };
+		CED6BD98271AFE7A00136B1E /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BD97271AFE7A00136B1E /* BookmarksViewController.swift */; };
+		CED6BD9A271AFE8600136B1E /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BD99271AFE8600136B1E /* TagsViewController.swift */; };
+		CED6BD9C271AFE9600136B1E /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BD9B271AFE9600136B1E /* ConfigViewController.swift */; };
+		CED6BD9E271B108000136B1E /* EditBookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BD9D271B108000136B1E /* EditBookmarkViewController.swift */; };
+		CED6BDA0271B134600136B1E /* EditTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6BD9F271B134600136B1E /* EditTagViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AE07C87B271910B8004992B7 /* hashKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hashKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE07C87E271910B8004992B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE07C880271910B8004992B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE07C882271910B8004992B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE07C885271910B8004992B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE07C887271910BB004992B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE07C88A271910BB004992B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE07C88C271910BB004992B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED6BD97271AFE7A00136B1E /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		CED6BD99271AFE8600136B1E /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		CED6BD9B271AFE9600136B1E /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		CED6BD9D271B108000136B1E /* EditBookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookmarkViewController.swift; sourceTree = "<group>"; };
+		CED6BD9F271B134600136B1E /* EditTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTagViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,11 @@
 			children = (
 				AE07C87E271910B8004992B7 /* AppDelegate.swift */,
 				AE07C880271910B8004992B7 /* SceneDelegate.swift */,
-				AE07C882271910B8004992B7 /* ViewController.swift */,
+				CED6BD97271AFE7A00136B1E /* BookmarksViewController.swift */,
+				CED6BD99271AFE8600136B1E /* TagsViewController.swift */,
+				CED6BD9B271AFE9600136B1E /* ConfigViewController.swift */,
+				CED6BD9D271B108000136B1E /* EditBookmarkViewController.swift */,
+				CED6BD9F271B134600136B1E /* EditTagViewController.swift */,
 				AE07C884271910B8004992B7 /* Main.storyboard */,
 				AE07C887271910BB004992B7 /* Assets.xcassets */,
 				AE07C889271910BB004992B7 /* LaunchScreen.storyboard */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE07C883271910B8004992B7 /* ViewController.swift in Sources */,
+				CED6BD98271AFE7A00136B1E /* BookmarksViewController.swift in Sources */,
+				CED6BD9A271AFE8600136B1E /* TagsViewController.swift in Sources */,
+				CED6BDA0271B134600136B1E /* EditTagViewController.swift in Sources */,
+				CED6BD9E271B108000136B1E /* EditBookmarkViewController.swift in Sources */,
 				AE07C87F271910B8004992B7 /* AppDelegate.swift in Sources */,
+				CED6BD9C271AFE9600136B1E /* ConfigViewController.swift in Sources */,
 				AE07C881271910B8004992B7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

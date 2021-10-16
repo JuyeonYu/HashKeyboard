@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Sentences: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
